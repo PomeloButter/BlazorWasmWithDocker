@@ -24,8 +24,8 @@ stages:
       displayName: Build and push an image to container registry
       inputs:
         command: buildAndPush
-        repository: demos/BlazorWasmWithDocker
+        repository: pomelobutter/BlazorWasmWithDocker
         dockerfile: '**/dockerfile'
-        containerRegistry: 'ccr.ccs.tencentyun.com'
+        containerRegistry: 'https://hub.docker.com'
         tags: |
           $(tag)
