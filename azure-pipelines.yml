@@ -1,5 +1,12 @@
+
 - task: Docker@2
   inputs:
-    repository: 'ccr.ccs.tencentyun.com'
-    command: 'buildAndPush'
+    command: 'build'
     Dockerfile: '**/Dockerfile'
+
+- task: Docker@2
+  inputs:
+      command: 'login'
+- task: Docker@2
+  inputs:
+    command: 'push'
