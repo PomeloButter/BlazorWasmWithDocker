@@ -26,6 +26,6 @@ stages:
         command: buildAndPush
         repository: demos/BlazorWasmWithDocker
         dockerfile: '**/dockerfile'
-        containerRegistry: 'dockerRegistryServiceConnection'
+        containerRegistry: 'ccr.ccs.tencentyun.com'
         tags: |
           $(tag)
